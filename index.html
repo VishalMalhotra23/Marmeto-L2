@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="tabs-section">
+        <div class="tabs-heading">SELECT YOUR CHOICE</div>
+        <div class="tabs">
+          <div class="tablinks active" onclick="openCategory(event, 'men')">
+            Men
+          </div>
+          <div class="tablinks" onclick="openCategory(event, 'women')">
+            Women
+          </div>
+          <div class="tablinks" onclick="openCategory(event, 'kids')">Kids</div>
+        </div>
+      </div>
+
+      <div id="men" class="tabcontent">
+        <!-- Men's Products will be dynamically inserted here -->
+      </div>
+
+      <div id="women" class="tabcontent">
+        <!-- Women's Products will be dynamically inserted here -->
+      </div>
+
+      <div id="kids" class="tabcontent">
+        <!-- Kids' Products will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
